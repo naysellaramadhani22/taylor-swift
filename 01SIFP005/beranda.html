@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap | Naysella Ramadhani</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(90deg, #300f25, hsl(296, 62%, 48%));
+    }
+  
+   /* Container utama agar konten di tengah */
+  .hero-wrapper {
+    padding: 50px 0; /* Memberi jarak atas bawah agar bg gradasi terlihat */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Kotak video yang melengkung sesuai gambar */
+  .welcome-section {
+    position: relative;
+    width: 90%; /* Lebar kotak video sesuai gambar */
+    max-width: 1200px;
+    height: 400px; /* Sesuaikan tinggi kotak video */
+    border-radius: 30px; /* Membuat ujung melengkung sesuai gambar */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  /* Video agar memenuhi kotak melengkung */
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  /* Konten teks dan foto di atas video */
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+
+  /* Ukuran foto Taylor yang lebar sesuai gambar */
+  .taylor-photo {
+    width: 600px; /* Ukuran foto dibuat lebar sesuai gambar ke-2 */
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .content-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-silver">
+  <div class="container">
+     <a class="navbar-brand fw-bold" href="index.html">Naysella Ramadhani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-wrapper">
+  
+  <div class="welcome-section">
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="bg.gif.mp4" type="video/mp4">
+    </video>
+
+    <div class="content-overlay">
+      <img src="yyy.jpg" alt="Taylor Swift" class="taylor-photo">
+      <h1>WELCOME</h1>
+      <p class="lead">TAYLOR SWIFT WEBSITE</p>
+      <a href="#" class="btn btn-silver mt-2" style="background: rgba(255,255,255,0.2); border: 1px solid white; color: white;">Pelajari Lebih Lanjut</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTENT -->
+<!-- CONTENT -->
+<div class="container my-5">
+  <div class="row text-center">
+
+    <!-- HOME (tidak perlu link) -->
+    <div class="col-md-4 mb-4">
+    <a href="home.html" class="text-decoration-none text-dark"> 
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title text-silver">HOME</h5>
+          <p class="card-text">Profile Taylor Swift</p>
+        </div>
+      </div>
+      </a> 
+    </div>
+
+    <!-- ABOUT (klik ke about.html) -->
+    <div class="col-md-4 mb-4">
+      <a href="about.html" class="text-decoration-none text-dark">
+        <div class="card shadow h-100">
+          <div class="card-body">
+            <h5 class="card-title text-silver">ABOUT</h5>
+            <p class="card-text">Biodata Taylor Swift</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- CONTACT (klik ke contact.html) -->
+    <div class="col-md-4 mb-4">
+      <a href="contact.html" class="text-decoration-none text-dark">
+        <div class="card shadow h-100">
+          <div class="card-body">
+            <h5 class="card-title text-silver">CONTACT</h5>
+            <p class="card-text">Sosial Media Taylor Swift</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+ <div class="bg-silver" style="position: relative; overflow: hidden;">
+    <video autoplay muted loop id="myVideo" style="position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1; object-fit: cover;">
+      <source src="bg.gif.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+<footer class="bg-silver text-white text-center p-3">
+  ©️ Naysella Ramadhani | 01SIFP005 | 251011700288
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
