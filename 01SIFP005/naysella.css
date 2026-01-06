@@ -1,0 +1,16 @@
+h1{ font-size:90px;
+    color: aqua; 
+    text-align: right;
+    font-family: 'Lucida Sans'; 
+    text-decoration: underline;}
+
+h2{font-size:50px;
+    color: rgb(38, 35, 219); 
+    text-align: center;
+    font-family: 'verdana'; }
+
+p{font-size:20px;
+    color: rgb(255, 76, 237); 
+    text-align: justify;
+    font-family: 'verdana';
+    background-color: rgb(102, 222, 255);}
